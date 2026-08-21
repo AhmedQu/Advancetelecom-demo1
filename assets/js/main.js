@@ -114,7 +114,7 @@ gsap.registerPlugin(ScrollTrigger);
           let rts = gsap.timeline({
             scrollTrigger: {
               trigger: container,
-              toggleActions: "restart none none reset",
+              toggleActions: "play pause resume reverse"
               start: "top 90%",
               end: "top 0%",
             }
@@ -147,7 +147,7 @@ gsap.registerPlugin(ScrollTrigger);
           let rts = gsap.timeline({
             scrollTrigger: {
               trigger: container,
-              toggleActions: "restart none none reset",
+              toggleActions: "play pause resume reverse",
             }
           });
 
