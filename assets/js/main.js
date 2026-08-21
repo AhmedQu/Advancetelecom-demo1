@@ -1,3 +1,5 @@
+gsap.registerPlugin(ScrollTrigger);
+
 /*=== Javascript function indexing hear===========
 
 01.gsapAnimationImageRevel();
