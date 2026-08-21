@@ -2321,6 +2321,23 @@ gsap.registerPlugin(ScrollTrigger);
       }
     },
 
+// Preloader Fix
+window.addEventListener('load', function () {
+    const preloader = document.querySelector('.preloader');
+    if (preloader) {
+        preloader.style.transition = 'opacity 0.5s ease, visibility 0.5s ease';
+        preloader.style.opacity = '0';
+        preloader.style.visibility = 'hidden';
+        
+        setTimeout(() => {
+            preloader.style.display = 'none';
+            // ScrollTrigger refresh zaroori hai taake loader ke baad animations smooth chalein
+            if (typeof ScrollTrigger !== 'undefined') {
+                ScrollTrigger.refresh();
+            }
+        }, 500);
+    }
+});
     preloaderWithBannerActivation: function () {
       const main_window = $(window);
       let percentage = 0;
