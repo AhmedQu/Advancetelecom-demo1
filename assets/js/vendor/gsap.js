@@ -1,5 +1,3 @@
-gsap.registerPlugin(ScrollTrigger);
-
 /*!
  * GSAP 3.11.4
  * https://greensock.com
