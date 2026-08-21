@@ -39,6 +39,7 @@
 37.rollingText();
 
 ==================================================*/
+gsap.registerPlugin(ScrollTrigger);
 
 (function ($) {
   'use strict';
